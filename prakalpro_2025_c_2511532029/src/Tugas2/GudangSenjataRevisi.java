@@ -3,8 +3,8 @@ package Tugas2;
 public class GudangSenjataRevisi {
     public static void main(String[] args) {
         // Data senjata
-        int jumlahSenjata = 120;        
-        char kategori = 'A';            
+        int jumlahSenjata = 50;        
+        char kategori = 'B';            
         boolean siapDigunakan = true;   
 
         // Tampilkan data
@@ -19,8 +19,7 @@ public class GudangSenjataRevisi {
             System.out.println(" Stok banyak — siap untuk misi besar!");
         } else if (jumlahSenjata > 50) {
             System.out.println(" Stok cukup — bisa untuk misi kecil.");
-        } else {
-            System.out.println(" Stok menipis — segera isi ulang!");
+        
         }
 
         // === 2. Cek kategori senjata ===
@@ -28,8 +27,7 @@ public class GudangSenjataRevisi {
             System.out.println(" Ini senjata jenis Assault — cocok untuk pertempuran umum.");
         } else if (kategori == 'B') {
             System.out.println(" Ini senjata jenis Sniper — untuk jarak jauh.");
-        } else {
-            System.out.println(" Kategori tidak dikenal.");
+        
         }
 
         // === 3. Cek kesiapan ===
