@@ -38,7 +38,7 @@ public class SistemPerhitunganBiayaPengirimanPaket {
                 break;
             default:
                 System.out.println("Jenis layanan tidak valid!");
-                return;
+                input.close();
         }
 
         double biayaJenisPaket = 0;
@@ -86,5 +86,6 @@ public class SistemPerhitunganBiayaPengirimanPaket {
         System.out.printf("Diskon          : Rp %.0f\n", diskon);
         System.out.println("-------------------------------------");
         System.out.printf("TOTAL BIAYA     : Rp %.0f\n", totalBiaya);
+        input.close();
     }
 }
